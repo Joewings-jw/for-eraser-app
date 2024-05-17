@@ -1,0 +1,89 @@
+cloud-architecture-diagram
+
+title Chatbot-as-a-Service for E-commerce
+
+// User onboarding process
+Onboarding [color: lightblue] {
+  Sign Up [icon: user-plus]
+  Icon Upload [icon: image]
+  Training Data Upload [icon: file-text]
+  Chatbot Trainer [icon: robot]
+  Create Chatbot [icon: check-circle]
+}
+
+// Testing and validation of chatbots
+Testing [color: lightgreen] {
+  Test Environment [icon: aws-ec2]
+  Internal Testing [icon: users]
+  Performance Metrics [icon: aws-cloudwatch]
+}
+
+// Deployment and integration with external platforms
+Deployment [color: lightcoral] {
+  Production Deployment [icon: aws-ec2]
+  Integration Module [icon: plug]
+  Dashboard [icon: monitor]
+}
+
+// Backend services for chatbot functionalities
+Backend Services [color: lightyellow] {
+  API Gateway [icon: aws-api-gateway]
+  BOT Service [icon: aws-lambda]
+  LLM and RAG Service [icon: aws-sagemaker]
+}
+
+// Database management
+Databases [color: lightgrey] {
+  Vector Database [icon: database]
+  Document Database [icon: file-text]
+}
+
+// Infrastructure and operational support
+Infrastructure [color: lightpurple] {
+  CI/CD Pipeline [icon: aws-codepipeline]
+  Logging System [icon: clipboard]
+  Payment Gateway [icon: credit-card]
+  API Key Management [icon: key]
+  Communication Service [icon: message-circle]
+  Issue Tracking System [icon: alert-circle]
+  File Storage [icon: aws-s3]
+  Email Service [icon: mail]
+  Authentication Service [icon: lock]
+}
+
+// Connections
+// Onboarding connections
+Sign Up > Icon Upload
+Icon Upload > Training Data Upload
+Training Data Upload > Chatbot Trainer
+Chatbot Trainer > Create Chatbot
+
+// Testing connections
+Create Chatbot > Test Environment
+Test Environment > Internal Testing
+Internal Testing > Performance Metrics
+
+// Deployment connections
+Performance Metrics > Production Deployment
+Production Deployment > Integration Module
+Integration Module > Dashboard
+
+// Backend Services connections
+API Gateway > BOT Service
+BOT Service > LLM and RAG Service
+
+// Database connections
+BOT Service > Vector Database
+BOT Service > Document Database
+
+// Infrastructure connections
+API Gateway > CI/CD Pipeline
+CI/CD Pipeline > Logging System
+Logging System > Payment Gateway
+Payment Gateway > API Key Management
+API Key Management > Communication Service
+Communication Service > Issue Tracking System
+Issue Tracking System > File Storage
+File Storage > Email Service
+Email Service > Authentication Service
+
