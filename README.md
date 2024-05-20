@@ -48,14 +48,7 @@ Onboarding a new client involves several steps to ensure they can successfully c
     - The chatbot is then deployed to the production environment.
     - It is integrated with other platforms.
     - The chatbot can be monitored and managed via the dashboard.
-4. **Infrastructure Connections**:
-    - Logs are maintained and linked to the payment gateway.
-    - The payment gateway interacts with API key management.
-    - API key management connects to the communication service.
-    - The communication service is linked to the issue tracking system.
-    - The issue tracking system interacts with file storage.
-    - File storage is connected to the email service.
-    - The email service works with the authentication service.
+   
 ## Services Overview and Data Flow
 The following diagram and description detail the various components and services involved in the bot development and deployment platform. It includes interactions between the user's endpoints, protected and restricted data centers, bot data center, messaging integration, cloud platforms, and more.
 
