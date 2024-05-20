@@ -8,7 +8,7 @@ An overview of the services and data flow involved in the bot development and de
 ### User Onboarding Process
 Onboarding a new client involves several steps to ensure they can successfully create and manage their chatbot. The process includes signing up, uploading necessary icons and training data, training the chatbot, and creating the final chatbot.
 
-Sure, here's a step-by-step explanation of the onboarding process for a client to create and manage their chatbot, along with testing, deployment, and infrastructure support:
+<a href="/README-A simulation on onboarding a client.-1.eraserdiagram" data-element-id="Zvr1MmBhhkJ0hArWizZrm"><img src="/.eraser/mz92IWrPY7HVxI6tE26d___3tlfRwbU7bQdIFNOQQ9jszZWtPw2___---diagram----bcbdd71660cb0c07038d0fea8b02ffb5-A-simulation-on-onboarding-a-client-.png" alt="" data-element-id="Zvr1MmBhhkJ0hArWizZrm" /></a>
 
 ### User Onboarding Process
 1. **Sign Up**: The user registers for an account on the platform.
@@ -60,9 +60,9 @@ Sure, here's a step-by-step explanation of the onboarding process for a client t
 The following diagram and description detail the various components and services involved in the bot development and deployment platform. It includes interactions between the user's endpoints, protected and restricted data centers, bot data center, messaging integration, cloud platforms, and more.
 
 ### Data Flow Diagram
-```
 
-```
+<a href="/README-Overview Data flow diagram for the bot development and deployment-2.eraserdiagram" data-element-id="oTJhlAY2fQi9h_lxiCKm-"><img src="/.eraser/mz92IWrPY7HVxI6tE26d___3tlfRwbU7bQdIFNOQQ9jszZWtPw2___---diagram----f795eb54deadc9dc2d0e0fa6e523707e-Overview-Data-flow-diagram-for-the-bot-development-and-deployment.png" alt="" data-element-id="oTJhlAY2fQi9h_lxiCKm-" /></a>
+
 ### Components and Services
 #### User's EP
 - **User**: The end user who interacts with the web application to create and manage bots.
@@ -139,12 +139,3 @@ The following diagram and description detail the various components and services
     - **Analytics** data is displayed in the Admin Dashboard.
 
 
-
-<!-- eraser-additional-content -->
-## Diagrams
-<!-- eraser-additional-files -->
-<a href="/README-A simulation on onboarding a client.-1.eraserdiagram" data-element-id="Zvr1MmBhhkJ0hArWizZrm"><img src="/.eraser/mz92IWrPY7HVxI6tE26d___3tlfRwbU7bQdIFNOQQ9jszZWtPw2___---diagram----bcbdd71660cb0c07038d0fea8b02ffb5-A-simulation-on-onboarding-a-client-.png" alt="" data-element-id="Zvr1MmBhhkJ0hArWizZrm" /></a>
-<a href="/README-Overview Data flow diagram for the bot development and deployment-2.eraserdiagram" data-element-id="oTJhlAY2fQi9h_lxiCKm-"><img src="/.eraser/mz92IWrPY7HVxI6tE26d___3tlfRwbU7bQdIFNOQQ9jszZWtPw2___---diagram----f795eb54deadc9dc2d0e0fa6e523707e-Overview-Data-flow-diagram-for-the-bot-development-and-deployment.png" alt="" data-element-id="oTJhlAY2fQi9h_lxiCKm-" /></a>
-<!-- end-eraser-additional-files -->
-<!-- end-eraser-additional-content -->
-<!--- Eraser file: https://app.eraser.io/workspace/mz92IWrPY7HVxI6tE26d --->
