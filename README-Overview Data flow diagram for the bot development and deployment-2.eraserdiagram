@@ -1,0 +1,90 @@
+cloud-architecture-diagram
+
+title Overview Data flow diagram for the bot development and deployment
+
+
+  User's EP {
+    User [icon: user]
+  }
+
+Data Center (Protected) {
+  Web App [icon: app, shape: circle]
+  Resource API [icon: ai]
+  Payments API [icon: credit-card, shape: circle]
+  Users API [icon: users]
+  Bot Category API [icon: api]
+  Bot Service API [icon: robot]
+  Bot evaluation [icon: bar-chart]
+  Bot development [icon: tool]
+  Bot tests [icon: tools]
+  Bot publisher [icon: newspaper]
+  Bot connector [icon: socials]
+  Bot analytics [icon: azure-endpoint-analytics]
+
+  Messaging Integration [color: lightcoral] {
+  Messenger Integration [icon: facebook]
+  Slack Integration [icon: slack]
+  Microsoft Teams Integration [icon: microsoft-teams]
+  Telegram Integration [icon: telegram]
+  Twilio Integration [icon: twilio]
+  }
+
+  Cloud Platform [color: blue] {
+  Google Dialogflow [icon: gcp-ai-platform]
+  Amazon Lex [icon: amazon]
+  Azure Bot Service [icon: azure]
+}
+ LLM Integration [icon: aws-sagemaker]
+ RAG Integration [icon: aws-sagemaker]
+ Vector Database [icon: database, shape: cylinder]
+ Admin Dashboard [color: purple, icon: pie-chart]
+
+ Publisher Platforms [color: white] {
+   Custom Web Service [color: yellow]
+   GCP [icon: gcp]
+   Amazon [icon: amazon]
+   Azure [icon: azure]
+ }
+
+ Bot Tester [color: red] {
+   Unit Tests
+   Framework Emulator
+   On-Platform Emulator
+ }
+
+ 
+
+
+  Data Center (Restricted) {
+    Payments [icon: credit-card, shape: cylinder]
+    Logs [icon: database, shape: cylinder]
+    Users [icon: users, shape: cylinder]
+    Bot Categories [icon: message-square, shape: cylinder]
+    Analytics [icon: trending-up, shape: cylinder]
+    Resource Provisioning [icon: cloud]
+  }
+    Bot Data Center (Restricted) [color: green] {
+    Conversational Analytics [icon: credit-card, shape: cylinder]
+    Alerts [icon: database, shape: cylinder]
+    Metrics [icon: users, shape: cylinder]
+    Diagnostic settings [icon: robot]
+    Bot logs [icon: trending-up, shape: cylinder]
+  }
+}
+
+
+User <> Web App: HTTPS
+Web App <> Bot Category API <> Bot Categories > Analytics
+Web App <> Payments API <> Payments > Analytics
+Web App <> Users API <> Users > Analytics
+Web App <> Resource API <> Resource Provisioning > Analytics
+Web App <> Bot Service API <> Bot development > Cloud Platform <> RAG Integration > Vector Database > LLM Integration > Cloud Platform
+Web App <> Bot Service API <> Bot tests > Bot Tester
+Web App <> Bot Service API <> Bot publisher > Publisher Platforms
+Web App <> Bot Service API <> Bot connector > Messaging Integration
+Web App <> Bot Service API <> Bot evaluation > Bot Data Center (Restricted)
+Conversational Analytics > Bot analytics
+Metrics > Bot analytics
+
+Analytics > Admin Dashboard
+Bot analytics > Admin Dashboard
